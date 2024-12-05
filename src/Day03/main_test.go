@@ -8,16 +8,16 @@ import (
 
 func TestPart1(t *testing.T) {
 	t.Run("Part 1", func(t *testing.T) {
-		expected := 11
-		actual := TotalDistance("test_input.txt")
+		expected := 161
+		actual := MultiplyResults("test_input.txt")
 		assert.Equal(t, expected, actual)
 	})
 }
 
 func TestPart2(t *testing.T) {
 	t.Run("Part 2", func(t *testing.T) {
-		expected := 31
-		actual := SimilarityScore("test_input.txt")
+		expected := 48
+		actual := MultiplyResultsWithAllInstructions("test_input.txt")
 		assert.Equal(t, expected, actual)
 	})
 }
