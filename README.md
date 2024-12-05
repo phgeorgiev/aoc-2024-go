@@ -8,7 +8,7 @@
 2. Run the following script to install dependencies.
 
 ```shell
-    go mod tidy
+go mod tidy
 ```
 
 ## Running
