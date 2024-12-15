@@ -24,3 +24,11 @@ Run the following to run the given puzzle input for the day.
 ```shell
 go run ./src/day01/main.go
 ```
+
+## Generate solution files
+
+Run the following command to generate solution files for a given day.
+
+```shell
+go run ./src/generate/main.go 1
+```
