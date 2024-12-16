@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/phgeorgiev/aoc-2024-go/pkg/array"
 	"github.com/phgeorgiev/aoc-2024-go/pkg/files"
 )
 
@@ -50,7 +51,7 @@ func isReportSafe(levels []int) bool {
 	flagIncrease, flagDecrease := false, false
 	allowedDifferLevels := []int{-3, -2, -1, 1, 2, 3}
 	for _, value := range differences {
-		if !inArray(value, allowedDifferLevels) {
+		if !array.InArray(value, allowedDifferLevels) {
 			return false
 		}
 
@@ -77,16 +78,6 @@ func zipWithNext(levels []int) []int {
 	}
 
 	return result
-}
-
-func inArray(needle int, haystack []int) bool {
-	for _, value := range haystack {
-		if value == needle {
-			return true
-		}
-	}
-
-	return false
 }
 
 func remove(slice []int, s int) []int {
